@@ -1,0 +1,15 @@
+[tool.semantic_release]
+version_variable = ["setup.py:__version__"]
+major_on_zero = 1
+
+[tool.semantic_release.remote]
+token = {env = "GH_TOKEN"}
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
+
+[tool.semantic_release.branches.dev]
+match = "dev"
+prerelease = true
+prerelease_token = "alpha"

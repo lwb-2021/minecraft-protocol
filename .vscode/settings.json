@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "minecraft_protocol"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
